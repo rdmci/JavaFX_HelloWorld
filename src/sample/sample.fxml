@@ -1,21 +1,36 @@
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
-
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.HBox?>
-<HBox fx:controller="sample.Controller"
-      xmlns:fx="http://javafx.com/fxml" alignment="bottom_right"
-        style="-fx-border-color: red; -fx-border-width: 3; -fx-border-style: dashed"
-        spacing="10">
-    <padding>
-        <Insets bottom="10" right="10"/>
-    </padding>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Label?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.Controller">
+    <top>
+        <Label text="This label is in the top position"
+               BorderPane.alignment="CENTER"
+               style="-fx-border-color: blue; -fx-border-width: 3;-fx-border-style: dashed"/>
+    </top>
+    <left>
+        <Label text="This label is in the left position"
+               BorderPane.alignment="CENTER"/>
+    </left>
+    <right>
+        <Label text="This label is in the right position"
+               BorderPane.alignment="CENTER"/>
+    </right>
+    <center>
+        <Label text="This label is in the centre position"
+               BorderPane.alignment="CENTER"/>
+    </center>
+    <bottom>
+        <HBox alignment="TOP_RIGHT" spacing="10">
+            <padding>
+                <Insets bottom="10" right="10"/>
+            </padding>
 
-    <Button text="OK" prefWidth="90"/>
-    <Button text="Cancel" prefWidth="90"/>
-    <Button text="Help" prefWidth="90"/>
-
-</HBox>
+            <Button text="OK" prefWidth="90"/>
+            <Button text="Cancel" prefWidth="90"/>
+            <Button text="Help" prefWidth="90"/>
+        </HBox>
+    </bottom>
+</BorderPane>
