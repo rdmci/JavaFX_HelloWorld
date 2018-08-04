@@ -26,7 +26,7 @@ public class Main extends Application {
 
 
         primaryStage.setTitle("Hello JavaFX");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, 500, 275));
 
 //        Label greeting = new Label("Welcome to JavaFX!");
 //        greeting.setTextFill(Color.GREEN);
